@@ -33,7 +33,7 @@
     <input type="number" name="max" value="<?=h($_GET['max'] ?? 30)?>" min="1">
   </div>
   <div style="align-self:end;"><button>Build Routes</button></div>
-  <div style="align-self:end;"><a class="secondary" href="/print_route.php?date=<?=urlencode($_GET['date'] ?? date('Y-m-d'))?>" target="_blank">Print Route Sheet</a></div>
+  <div style="align-self:end;"><a class="secondary" href="print_route.php?date=<?=urlencode($_GET['date'] ?? date('Y-m-d'))?>" target="_blank">Print Route Sheet</a></div>
 </form>
 
 <?php
