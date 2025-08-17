@@ -39,7 +39,7 @@
     <input type="date" name="to" value="<?=h($_GET['to'] ?? '')?>">
   </div>
   <div style="align-self:end;"><button class="secondary">Filter</button></div>
-  <div style="align-self:end;"><a class="secondary" href="/api/export.php?view=output1">Export CSV</a></div>
+  <div style="align-self:end;"><a class="secondary" href="api/export.php?view=output1">Export CSV</a></div>
 </form>
 
 <table class="table">
@@ -66,7 +66,7 @@
       echo "<td>".h($r['start_date'])."</td>";
       echo "<td>".h($r['end_date'])."</td>";
       echo "<td>".h(number_format((float)$r['total_price'],2))."</td>";
-      echo "<td><a href='/job.php?id=".urlencode($r['job_id'])."'>View</a></td>";
+      echo "<td><a href='job.php?id=".urlencode($r['job_id'])."'>View</a></td>";
       echo "</tr>";
     }
   ?>

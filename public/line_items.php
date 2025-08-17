@@ -25,7 +25,7 @@
     <input type="text" name="jobno" value="<?=h($_GET['jobno'] ?? '')?>">
   </div>
   <div style="align-self:end;"><button class="secondary">Find</button></div>
-  <div style="align-self:end;"><a class="secondary" href="/api/export.php?view=output2">Export CSV</a></div>
+  <div style="align-self:end;"><a class="secondary" href="api/export.php?view=output2">Export CSV</a></div>
 </form>
 <?php
 $rows = [];
